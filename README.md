@@ -29,5 +29,31 @@ It analyzes code in **any programming language**, detects issues, highlights str
 
 ---
 
-## 📁 Project Structure
+## 🔌 How It Works
+
+1. Paste code into the editor
+2. Click **Review Code**
+3. Frontend sends the code to `/api/review`
+4. API route forwards the request to an **n8n webhook**
+5. AI analyzes the code and returns:
+   - Detected language
+   - Overall score
+   - Issues
+   - Strengths
+   - Recommendations
+   - Renewed (improved) code
+6. Results are displayed in the UI with tabbed views
+
+---
+
+## 🌐 API Endpoint
+
+### `POST /api/review`
+
+---
+
+## ENV Variables
+
+### Add an .env.local file at the project's root dir
+### N8N_REVIEW_URL=https://your-n8n-webhook-url
 
