@@ -48,12 +48,12 @@ It analyzes code in **any programming language**, detects issues, highlights str
 
 ## 🌐 API Endpoint
 
-### `POST /api/review`
+`POST /api/review`
 
 ---
 
 ## ENV Variables
 
-### Add an .env.local file at the project's root dir
-### N8N_REVIEW_URL=https://your-n8n-webhook-url
+Add an .env.local file at the project's root dir
+N8N_REVIEW_URL=your-n8n-webhook-url
 
